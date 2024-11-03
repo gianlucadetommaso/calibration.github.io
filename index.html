@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gianluca Detommaso</title>
+    <!-- Font Awesome CDN for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: "Arial Nova", Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Profile picture styling */
+        .profile-pic {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 3;
+        }
+        /* Full-width header styling */
+        header {
+            background: linear-gradient(135deg, rgba(44, 62, 80, 0.9), rgba(74, 111, 165, 0.9));
+            color: #fff;
+            height: 170px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-top: 10px;
+            flex-direction: column;
+        }
+        header .info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+            padding-bottom: 0.5em;
+        }
+        header p {
+            margin: 0;
+            font-size: 1.1em;
+            opacity: 0.95;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        /* Icon styling for contact links */
+        .contact-icons {
+            display: flex;
+            gap: 1em;
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .contact-icons a {
+            color: #fff;
+            transition: color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #ddd;
+        }
+        /* Container for sidebar and content */
+        .main-container {
+            display: flex;
+            width: 100%;
+            margin-top: 180px;
+        }
+        /* Sidebar styling */
+        .sidebar {
+            width: 200px;
+            background-color: #f7f7f7;
+            color: #333;
+            height: calc(100vh - 180px);
+            position: fixed;
+            top: 180px;
+            left: 0;
+            box-sizing: border-box;
+            padding-top: 2em;
+            border-right: 1px solid #ddd;
+            z-index: 1;
+        }
+        .sidebar nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar nav ul li {
+            padding: 1em;
+            text-align: center;
+        }
+        .sidebar nav ul li a {
+            color: #333;
+            text-decoration: none;
+            font-size: 1.1em;
+            display: block;
+        }
+        .sidebar nav ul li a:hover {
+            background-color: #e0e0e0;
+        }
+        /* Content styling */
+        .content {
+            margin-left: 200px;
+            padding: 2em;
+            width: calc(100% - 200px);
+            box-sizing: border-box;
+        }
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 0 1em;
+        }
+        .section-title {
+            color: #2c3e50;
+            padding-bottom: 0.3em;
+            margin-bottom: 1em;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1em;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Profile Picture -->
+    <img src="me_circle.png" alt="Your Profile Picture" class="profile-pic">
+
+    <!-- Header (Full Width) -->
+    <header>
+        <div class="info">
+            <h1>Gianluca Detommaso</h1>
+            <p>AI Assurance Lead @ Helsing | ex-AWS | PhD in Statistics & Applied Mathematics</p>
+        </div>
+        <div class="contact-icons">
+            <a href="mailto:detommaso.gianluca@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/gianluca-detommaso/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/gianlucadetommaso" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/detommaso_g" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Homepage</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="content">
+            <section id="about">
+                <h2 class="section-title">About Me</h2>
+                <p>[WIP]</p>
+            </section>
+        </div>
+    </div>
+
+</body>
+</html>
